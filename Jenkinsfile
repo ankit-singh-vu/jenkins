@@ -10,17 +10,33 @@
 //     }
 // }
 
+// pipeline {
+//     agent any
+//     stages {
+//         stage('Build') {
+//             steps {
+//                 sh 'echo "Ankit is here"'
+//                 sh 'echo "Hello World"'
+//                 sh '''
+//                     echo "Multiline shell steps works too"
+//                     ls -lah
+//                 '''
+//             }
+//         }
+//     }
+// }
+
+
 pipeline {
     agent any
     stages {
         stage('Build') {
             steps {
-                sh 'echo "Ankit is here"'
-                sh 'echo "Hello World"'
-                sh '''
-                    echo "Multiline shell steps works too"
-                    ls -lah
-                '''
+                sh 'echo "starting npm install"'
+                sh 'cd /media/dell/1C2210EF2210D01E/MyDevops/node-backend/'
+                sh 'ls -la'
+                sh 'npm i'
+                sh 'npm start'
             }
         }
     }
