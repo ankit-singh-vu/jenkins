@@ -9,7 +9,7 @@ path of jenkins pipeline in local system
 
 go to Manage Jenkins from top nav bar notification icon > manage Plugins > click Available plugins > search Nodejs and install
 
-go to Manage Jenkins from top nav bar notification icon > manage Plugins > Global Tool Configuration > search Nodejs and "nodejs"  in the Name.
+go to Manage Jenkins from top nav bar notification icon > manage Plugins > Global Tool Configuration > search Nodejs and enter "nodejs"  in the Name.
 
 https://stackoverflow.com/a/55582094/9802578
 open http://localhost:8000/html
