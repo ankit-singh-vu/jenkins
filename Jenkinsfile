@@ -34,10 +34,10 @@ pipeline {
             steps {
                 sh 'echo "starting npm install"'
                 sh 'pwd'
-                // sh 'cd /media/dell/1C2210EF2210D01E/MyDevops/node-backend/'
+                sh 'cd ./node-backend/'
                 sh 'ls -la'
-                // sh 'npm i'
-                // sh 'npm start'
+                sh 'npm i'
+                sh 'npm start'
             }
         }
     }
