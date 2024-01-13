@@ -34,8 +34,8 @@ pipeline {
             steps {
                 sh 'echo "starting npm install"'
                 sh 'pwd'
-                sh 'cd ./node-backend/  && ls -la'
-                sh 'ls -la'
+                sh 'cd ./node-backend/  && ls -la  && npm i && npm start'
+                sh 'ls -la' //its coming back to root dir so using all cmds in one line
                 // sh 'npm i'
                 // sh 'npm start'
             }
