@@ -15,6 +15,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
+                sh 'echo "Ankit is here"'
                 sh 'echo "Hello World"'
                 sh '''
                     echo "Multiline shell steps works too"
