@@ -35,7 +35,7 @@ pipeline {
                 sh 'echo "starting npm install"'
                 sh 'pwd'
                 sh 'cd ./node-backend/  && ls -la'
-                // sh 'ls -la'
+                sh 'ls -la'
                 // sh 'npm i'
                 // sh 'npm start'
             }
